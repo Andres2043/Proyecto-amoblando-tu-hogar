@@ -7,18 +7,16 @@
  */
 
 /**
- * Description of indexController
+ * Description of UsuarioController
  *
  * @author APRENDIZ
  */
-class indexController {
+class UsuarioController {
     
     
-    public function home(){
+    public function login(){
         require_once 'views/all/header.php';
-        require_once 'views/index/home.php';
+        require_once 'views/index/login.php';
         require_once 'views/all/footer.php';
     }
-   
-         
 }

@@ -7,18 +7,11 @@
  */
 
 /**
- * Description of indexController
+ * Description of AdministradorController
  *
  * @author APRENDIZ
  */
-class indexController {
+class AdministradorController {
     
     
-    public function home(){
-        require_once 'views/all/header.php';
-        require_once 'views/index/home.php';
-        require_once 'views/all/footer.php';
-    }
-   
-         
 }
