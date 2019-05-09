@@ -20,8 +20,8 @@
 
     <nav>
       <div style="background-color: #ffe0b2!important "class="nav-wrapper indigo darken-2">
-        <a style="margin-left: 20px;" class="breadcrumb" href="#!">Admin</a>
-        <a class="breadcrumb" href="#!">Index</a>
+          <a style="margin-left: 20px; color: #FFF" class="breadcrumb" href="#!" >Admin</a>
+          <a style="color: #FFF" class="breadcrumb" href="#!">Index</a>
 
         <div style="margin-right: 20px;" id="timestamp" class="right"></div>
       </div>

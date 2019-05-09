@@ -18,9 +18,7 @@
       </div>
     </div>
     <div class="footer-copyright">
-      <div class="container">
-         <span>Made By <a style='font-weight: bold;' href="https://github.com/piedcipher" target="_blank">Tirth Patel</a></span>
-      </div>
+      
     </div>
   </footer>
 </body>
