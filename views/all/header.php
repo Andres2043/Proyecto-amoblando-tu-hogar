@@ -1,19 +1,12 @@
-<html>
-    <head>
-        <title>title</title>
-        
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-        
-        <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/font/material-design-icons/Material-Design-Icons.woff">
-        
-        <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css" rel="stylesheet">
-        
-        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-        
-        <link href="assets/App/App.css">
+<head>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/font/material-design-icons/Material-Design-Icons.woff" rel="stylesheet">
+<link rel="stylesheet" href="assets/app/app.css"/>
+</head>
 
-    </head>
-    <body>
+<body>
+
   <ul id="slide-out" class="side-nav fixed z-depth-2">
     <li class="center no-padding">
       <div class="indigo darken-2 white-text" style="height: 180px;">
@@ -88,22 +81,3 @@
       </li>
     </ul>
   </ul>
-
-  <header>
-    <ul class="dropdown-content" id="user_dropdown">
-      <li><a class="indigo-text" href="#!">Iniciar Sesion</a></li>
-      <li><a class="indigo-text" href="?c=usuario&m=login">Registrar</a></li>
-    </ul>
-
-    <nav class="indigo" role="navigation">
-      <div class="nav-wrapper">
-        <a data-activates="slide-out" class="button-collapse show-on-" href="#!"><img style="margin-top: 17px; margin-left: 5px;" src="https://res.cloudinary.com/dacg0wegv/image/upload/t_media_lib_thumb/v1463989873/smaller-main-logo_3_bm40iv.gif" /></a>
-
-        
-
-        <a href="#" data-activates="slide-out" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
-      </div>
- 
-      
-    </nav>
-  </header>

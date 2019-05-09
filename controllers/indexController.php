@@ -16,6 +16,7 @@ class indexController {
     
     public function home(){
         require_once 'views/all/header.php';
+        require_once 'views/all/navbar.php';
         require_once 'views/index/home.php';
         require_once 'views/all/footer.php';
     }

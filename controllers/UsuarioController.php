@@ -16,6 +16,7 @@ class UsuarioController {
     
     public function login(){
         require_once 'views/all/header.php';
+        require_once 'views/all/navbar.php';
         require_once 'views/index/login.php';
         require_once 'views/all/footer.php';
     }

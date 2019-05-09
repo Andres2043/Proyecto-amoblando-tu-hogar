@@ -1,11 +1,11 @@
-<body>
 
 
-    <main>
-        <div class="">
-            <div class="row">
+  
+
+  <main>
+    <div class="row">
       <div class="col s6">
-        <div style="padding: 35px;" align="" class="card">
+        <div style="padding: 35px;" align="center" class="card">
           <div class="row">
             <div class="left card-title">
               <b>User Management</b>
@@ -19,7 +19,8 @@
                 <span class="indigo-text text-lighten-1"><h5>Seller</h5></span>
               </div>
             </a>
-            
+            <div class="col s1">&nbsp;</div>
+            <div class="col s1">&nbsp;</div>
 
             <a href="#!">
               <div style="padding: 30px;" class="grey lighten-3 col s5 waves-effect">
@@ -59,7 +60,6 @@
         </div>
       </div>
     </div>
-        </div>
 
     <div class="row">
       <div class="col s6">
@@ -147,6 +147,3 @@
       </ul>
     </div>
   </main>
-
-
-
