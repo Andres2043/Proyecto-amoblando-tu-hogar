@@ -7,15 +7,15 @@
 
 <body>
 
-  <ul id="slide-out" class="side-nav fixed z-depth-2">
+    <ul id="slide-out" class="side-nav fixed z-depth-2">
     <li class="center no-padding">
-      <div class="indigo darken-2 white-text" style="height: 180px;">
+      <div style="background-color: #ffb74d!important" class="indigo darken-2 white-text" style="height: 180px;">
         <div class="row">
-          <img style="margin-top: 5%;" width="100" height="100" src="https://res.cloudinary.com/dacg0wegv/image/upload/t_media_lib_thumb/v1463990208/photo_dkkrxc.png" class="circle responsive-img" />
+          <img style="margin-top: 5%;" width="100" height="100" src="https://res.cloudinary.com/dacg0wegv/image/upload/t_media_lib_thumb/v1463990208/photo_dkkrxc.png" class="circle responsive-img"/>
 
-          <p style="margin-top: -13%;">
-            Tirth Patel
-          </p>
+          <a href='?c=index&m=home' style="color: #FFF"><p style="margin-top: -5%;">
+            Amoblando tu hogar
+          </p></a>
         </div>
       </div>
     </li>

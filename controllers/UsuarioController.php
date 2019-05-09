@@ -19,5 +19,12 @@ class UsuarioController {
         require_once 'views/all/navbar.php';
         require_once 'views/index/login.php';
         require_once 'views/all/footer.php';
+        
+    }public function Registro(){
+        require_once 'views/all/header.php';
+        require_once 'views/all/navbar.php';
+        require_once 'views/index/Registro.php';
+        require_once 'views/all/footer.php';
     }
+    
 }

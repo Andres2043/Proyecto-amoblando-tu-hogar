@@ -1,10 +1,10 @@
 <header>
     <ul class="dropdown-content" id="user_dropdown">
       <li><a class="indigo-text" href="?c=usuario&m=login">Iniciar Sesion</a></li>
-      <li><a class="indigo-text" href="#!">Registrar</a></li>
+      <li><a class="indigo-text" href="?c=usuario&m=Registro">Registrar</a></li>
     </ul>
 
-    <nav class="indigo" role="navigation">
+    <nav style="background-color: #ffb74d!important " class="indigo" role="navigation">
       <div class="nav-wrapper">
         <a data-activates="slide-out" class="button-collapse show-on-" href="#!"><img style="margin-top: 17px; margin-left: 5px;" src="https://res.cloudinary.com/dacg0wegv/image/upload/t_media_lib_thumb/v1463989873/smaller-main-logo_3_bm40iv.gif" /></a>
 
@@ -19,7 +19,7 @@
     </nav>
 
     <nav>
-      <div class="nav-wrapper indigo darken-2">
+      <div style="background-color: #ffe0b2!important "class="nav-wrapper indigo darken-2">
         <a style="margin-left: 20px;" class="breadcrumb" href="#!">Admin</a>
         <a class="breadcrumb" href="#!">Index</a>
 

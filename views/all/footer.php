@@ -1,7 +1,7 @@
    
 
 
-  <footer class="indigo page-footer">
+  <footer style="background-color: #3e2723!important " class="indigo page-footer">
     <div class="container">
       <div class="row">
         <div class="col s12">
