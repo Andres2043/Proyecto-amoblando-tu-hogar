@@ -5,6 +5,13 @@
 <link rel="stylesheet" href="assets/app/app.css"/>
 </head>
 
+<style>
+    
+    option [selected]{
+        display: none!important;
+    }
+</style>
+
 <body>
 
     <ul id="slide-out" class="side-nav fixed z-depth-2">

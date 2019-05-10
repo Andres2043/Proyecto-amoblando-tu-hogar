@@ -7,11 +7,11 @@
  */
 
 /**
- * Description of Genero
+ * Description of Ciudad
  *
- * @author ari-asisger
+ * @author APRENDIZ
  */
-class Genero {
+class Ciudad {
     private $pdo;
     public function __construct() {
         try{
@@ -21,12 +21,12 @@ class Genero {
         }
     }
     public function consultar(){
-        try{
-            $stm=$this->pdo->prepare("SELECT * FROM Tipo_Genero");
+            try{
+            $stm=$this->pdo->prepare("SELECT * FROM Ciudad");
             $stm->execute();
             return $stm->fetchAll(PDO::FETCH_OBJ);
-        } catch (Exception $ex) {
-            die($e->getMessage());
-        }
+            } catch (Exception $e) {
+                die($e->getMessage());
+            }
     }
 }

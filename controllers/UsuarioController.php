@@ -12,11 +12,18 @@
  * @author APRENDIZ
  */
 class UsuarioController {
-    private $modelUsuario;
+    private $Usuario;
+    private $Documento;
+    private $Genero;
+    private $Ciudad;
     
     public function __construct() {
         try{
-            $this->modelUsuario= new Usuario();
+            $this->Usuario= new Usuario();
+            $this->Documento= new Documento();
+            $this->Genero= new Genero();
+            $this->Ciudad= new Ciudad();
+            
         } catch (Exception $e) {
             die($e->getMessage());
         }
@@ -35,8 +42,24 @@ class UsuarioController {
         require_once 'views/index/Registro.php';
         require_once 'views/all/footer.php';
     }
-    public function store_user(){
-        $data=array($_POST['email'],$_POST['password']);
-        $this->modelUsuario->create($data);
+    public function Guardar_Usuario(){
+         echo $Primer_Nombre=$_POST['prim_nom'];
+        $Segundo_Nombre=$_POST['seg_nom'];
+        $Primer_Apellido=$_POST['prim_ap'];
+        $Segundo_Apellido=$_POST['seg_ap'];
+        $Correo=$_POST['email'];
+        $Pasword=$_POST['password'];
+        $Id_Documento=$_POST['Documento'];
+        $Id_Genero=$_POST['genero'];
+        $Id_Ciudad=$_POST['ciudad'];
+        
+        $this->Usuario->create($Primer_Nombre,$Segundo_Nombre,$Primer_Apellido,$Segundo_Apellido,$Correo,$Pasword,$Id_Documento,$Id_Genero,$Id_Ciudad);
+        
     }
+    public function autentificacion(){
+        
+    }
+    
 }
+
+
