@@ -16,15 +16,19 @@ class UsuarioController {
     private $Documento;
     private $Genero;
     private $Ciudad;
-    
+    private $security;
+
+
     public function __construct() {
         try{
             $this->Usuario= new Usuario();
             $this->Documento= new Documento();
             $this->Genero= new Genero();
             $this->Ciudad= new Ciudad();
+            $this->security= new Security();
             
         } catch (Exception $e) {
+            
             die($e->getMessage());
         }
     }
@@ -36,7 +40,17 @@ class UsuarioController {
         require_once 'views/index/login.php';
         require_once 'views/all/footer.php';
         
-    }public function Registro(){
+    }
+    public function Primer_login(){
+        require_once 'views/all/header.php';
+        require_once 'views/all/navbar.php';
+        require_once 'views/index/Primer_login.php';
+        require_once 'views/all/footer.php';
+    }
+    
+    
+    
+    public function Registro(){
         require_once 'views/all/header.php';
         require_once 'views/all/navbar.php';
         require_once 'views/index/Registro.php';
@@ -54,11 +68,20 @@ class UsuarioController {
         $Id_Ciudad=$_POST['ciudad'];
         
         $this->Usuario->create($Primer_Nombre,$Segundo_Nombre,$Primer_Apellido,$Segundo_Apellido,$Correo,$Pasword,$Id_Documento,$Id_Genero,$Id_Ciudad);
-        
+        header('location:?c=usuario&m=Primer_login');
     }
     public function autentificacion(){
-        
+        $Correo=$_POST['email'];
+        $pasword=$_POST['password'];
+        foreach ($this->Usuario->consultar_correo($Correo) as $value){}
+        if($Correo==$value->Correo and $pasword==$value->Pasword){
+            $this->security->Auth($Correo);
+            header('location:?c=administrador&m=home');
+        }else{
+            echo 'algo anda mal';
+        }
     }
+    
     
 }
 

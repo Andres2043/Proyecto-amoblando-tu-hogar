@@ -12,11 +12,12 @@
               <div class="form-group">
                 <form method="post" action="?c=usuario&m=Guardar_Usuario">
                   <label  style="color: #323232">Documento</label>
-                  <select name="Documento" required="">  
+                  <select name="Documento" >  
                       <option>Seleccione...</option>
+                      
                   <?php foreach ($this->Documento->consultar()as $value) { ?>
-                        
-                      <option value="<?php echo $value->Id_Documento ?>"><?php  echo $value->Sg_Documento ?></option>
+                      
+                      <option style="color: #3e2723!important" value="<?php echo $value->Id_Documento ?>"><?php  echo $value->Sg_Documento ?></option>
                   
                   <?php  } ?>
                   </select>
@@ -35,11 +36,11 @@
                   
                        <label  style="color: #323232">Genero</label>
                        <div>
-                           <select name="genero" required="">
+                           <select name="genero" >
                                <option>Seleccione...</option>
                                <?php foreach ($this->Genero->consultar() as $value) {?>
                             
-                               <option value="<?php  echo $value->Id_Genero ?>"><?php echo $value->Genero ?></option>
+                               <option required="" value="<?php  echo $value->Id_Genero ?>"><?php echo $value->Genero ?></option>
                            
                                <?php  } ?>
                             </select>

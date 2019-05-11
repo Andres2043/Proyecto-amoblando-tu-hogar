@@ -12,7 +12,7 @@
  * @author APRENDIZ
  */
 class Security extends DB{
-   public function Auth(){
+   public function Auth($Correo){
        try{
            $stm= parent::Conectar()->prepare("SELECT * FROM Clientes WHERE Correo = ?");
            $stm->bindParam(1,$Correo,PDO::PARAM_STR);
@@ -25,12 +25,12 @@ class Security extends DB{
    public function Destroy(){
        unset($_SESSION['USER']);
        session_destroy();
-       header('location:?c=usuario&m=registro');
+       header('location:?c=index&m=home');
    }
    
    public function validate(){
        if(!isset($_SESSION['USER']) OR is_null($_SESSION['USER'])){
-           header('location:?c=usuario&m=registro');
+           header('location:?c=index&m=home');
        }
    }
 }

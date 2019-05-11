@@ -1,12 +1,12 @@
 <header>
-    <ul  class="dropdown-content" id="user_dropdown">
-        <li ><a style="color: #3e2723!important"class="indigo-text" href="?c=usuario&m=login"><center>Iniciar Sesion</center></a></li>
-        <li><a style="color: #3e2723!important" class="indigo-text" href="?c=usuario&m=Registro"><center>Registrar</center> </a></li>
+    <ul class="dropdown-content" id="user_dropdown">
+      
+      <li><a class="indigo-text" href="?c=security&m=salir">Salir</a></li>
     </ul>
 
     <nav style="background-color: #ffb74d!important " class="indigo" role="navigation">
       <div class="nav-wrapper">
-        <a data-activates="slide-out" class="button-collapse show-on-" href="#!"><i class="material-icons">menu</i></a>
+        <a data-activates="slide-out" class="button-collapse show-on-" href="#!"><img style="margin-top: 17px; margin-left: 5px;" src="https://res.cloudinary.com/dacg0wegv/image/upload/t_media_lib_thumb/v1463989873/smaller-main-logo_3_bm40iv.gif" /></a>
 
         <ul class="right hide-on-med-and-down">
           <li>
@@ -20,11 +20,8 @@
 
     <nav>
       <div style="background-color: #ffe0b2!important "class="nav-wrapper indigo darken-2">
-          <a style="margin-left: 20px; color: #FFF" class="breadcrumb"   >Usuario</a>
-          <a style="color: #FFF" class="breadcrumb" href="#!">¿Quienes Somos?</a>
+          <a style="margin-left: 20px; color: #FFF" class="breadcrumb" href="#!" ><?php echo $_SESSION['USER']->Primer_Nombre;   ?></a>
           <a style="color: #FFF" class="breadcrumb" href="#!">Index</a>
-          
-          
 
         <div style="margin-right: 20px;" id="timestamp" class="right"></div>
       </div>

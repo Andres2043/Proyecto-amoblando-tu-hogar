@@ -5,10 +5,11 @@
       <div class="col s12">
         <div style="padding: 35px;" align="center" class="card">
           <div class="row">
-              
-            <div class="left card-title">
-              <b>Iniciar Sesion</b>
-            </div>
+              <div>
+                  <center><h1>¡Te has registrado correctamente!</h1> </center>
+                  <center><h5>Inicia sesion con nosotros y experimenta todo lo que te podemos brindar</h5></center>
+              </div>
+            
           </div>
 
             <form action="?c=usuario&m=autentificacion" method="post">
@@ -26,12 +27,10 @@
                   <button style=" background-color: #ffb74d!important;" class="btn btn2 waves-effect waves-light" type="submit" name="action">Ingresar
                              <i class="material-icons right">send</i>
                     </button>
-                  
               </div>
           </div>
             </form>
-            <div class="col s6 offset-s6"><a href="?c=usuario&m=registro">¿No te has registrado? Registrate aqui.</a></div>
-        </div>         
+        </div>
       </div>
 
       
