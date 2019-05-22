@@ -21,8 +21,12 @@
                   
                   <?php  } ?>
                   </select>
+                  <div>
+                      <label style="color: #323232">Documento</label>
+                      <input name="doc" required="" style="box-shadow: none!important;border-bottom-color: #9e9e9e" class="form-control" type="text" placeholder="Documento">
+                  </div>
                   
-                      <div class="">
+                   <div class="">
                       <label style="color: #323232">Nombres</label>
                       <input name="prim_nom" required="" style="box-shadow:  none!important; border-bottom-color: #9e9e9e" class="form-control" type="text" placeholder="Primer nombre">
                       <input name="seg_nom" required="" style="box-shadow:  none!important; border-bottom-color: #9e9e9e" class="form-control" type="text" placeholder="Segundo nombre"> 
@@ -70,6 +74,11 @@
                                 </button>
                  </form>
               </div>
+                <div class="col s6 offset-s6">
+                        <form method="post" action="?c=admin&m=Registro">
+                            <button style="background-color: #3e2723!important; color: white;" class="btn btn2 waves-effect waves-light">Admin</button>
+                        </form>
+                    </div>
           </div>
         </div>
       </div>

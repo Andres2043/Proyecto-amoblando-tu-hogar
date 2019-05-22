@@ -17,5 +17,18 @@ class AdminController {
         require_once 'views/all/header.php';
         require_once 'views/all/navbar.php';
         require_once 'views/index/Admin/home.php';
+        require_once 'views/all/footer.php';
+    }
+    public function login(){
+        require_once 'views/all/header.php';
+        require_once 'views/all/navbar.php';
+        require_once 'views/index/Admin/login.php';
+        require_once 'views/all/footer.php';
+    }
+    public function Registro(){
+        require_once 'views/all/header.php';
+        require_once 'views/all/navbar.php';
+        require_once 'views/index/Admin/adminRegistro.php';
+        require_once 'views/all/footer.php';
     }
 }

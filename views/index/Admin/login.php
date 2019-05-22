@@ -1,5 +1,3 @@
-
-
 <main>
     <div class="row">
       <div class="col s12">
@@ -10,7 +8,7 @@
               <b>Iniciar Sesion</b>
             </div>
           </div>
-                
+            
             <form action="?c=usuario&m=autentificacion" method="post">
                 <div class="" style="padding: 100px">
               <div class="form-group">
@@ -30,16 +28,7 @@
               </div>
           </div>
             </form>
-            <div class="col-md-12">
-                <div class="row">
-                    <div class="col s6">
-                        <form method="post" action="?c=admin&m=login">
-                            <button style="background-color: #3e2723!important; color: white;" class="btn btn2 waves-effect waves-light">Admin</button>
-                        </form>
-                    </div>
-                <div class="col s6 "><a href="?c=usuario&m=registro">¿No te has registrado? Registrate aqui.</a></div>
-                </div>
-            </div>
+            
         </div>         
       </div>
 

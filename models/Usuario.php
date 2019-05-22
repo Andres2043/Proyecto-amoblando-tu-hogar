@@ -2,18 +2,19 @@
 
 class  Usuario extends DB{
     
-    public function create ($Primer_Nombre,$Segundo_Nombre,$Primer_Apellido,$Segundo_Apellido,$Correo,$Pasword,$Id_Documento,$Id_Genero,$Id_Ciudad) {
+    public function create ($Primer_Nombre,$Segundo_Nombre,$Primer_Apellido,$Segundo_Apellido,$Documento,$Correo,$Pasword,$Id_Documento,$Id_Genero,$Id_Ciudad) {
         try{
-            $stm= parent::Conectar()->prepare("INSERT INTO Clientes (Primer_Nombre,Segundo_Nombre,Primer_Apellido,Segundo_Apellido,Correo,Pasword,Id_Documento,Id_Genero,Id_Ciudad) VALUES (?,?,?,?,?,?,?,?,?)");
+            $stm= parent::Conectar()->prepare("INSERT INTO Clientes (Primer_Nombre,Segundo_Nombre,Primer_Apellido,Segundo_Apellido,Documento,Correo,Pasword,Id_Documento,Id_Genero,Id_Ciudad) VALUES (?,?,?,?,?,?,?,?,?,?)");
             $stm->bindParam(1, $Primer_Nombre, PDO::PARAM_STR);
             $stm->bindParam(2, $Segundo_Nombre, PDO::PARAM_STR);
             $stm->bindParam(3, $Primer_Apellido , PDO::PARAM_STR);
             $stm->bindParam(4, $Segundo_Apellido, PDO::PARAM_STR);
-            $stm->bindParam(5, $Correo, PDO::PARAM_STR);
-            $stm->bindParam(6, $Pasword, PDO::PARAM_STR);
-            $stm->bindParam(7, $Id_Documento, PDO::PARAM_STR);
-            $stm->bindParam(8, $Id_Genero, PDO::PARAM_STR);
-            $stm->bindParam(9, $Id_Ciudad, PDO::PARAM_STR);
+            $stm->bindParam(5, $Documento, PDO::PARAM_STR);
+            $stm->bindParam(6, $Correo, PDO::PARAM_STR);
+            $stm->bindParam(7, $Pasword, PDO::PARAM_STR);
+            $stm->bindParam(8, $Id_Documento, PDO::PARAM_STR);
+            $stm->bindParam(9, $Id_Genero, PDO::PARAM_STR);
+            $stm->bindParam(10, $Id_Ciudad, PDO::PARAM_STR);
             $stm->execute();
         } catch (Exception $e) {
             die($e->getMessage());

@@ -57,7 +57,8 @@ class UsuarioController {
         require_once 'views/all/footer.php';
     }
     public function Guardar_Usuario(){
-         echo $Primer_Nombre=$_POST['prim_nom'];
+        $Documento=$_POST['doc'];
+        $Primer_Nombre=$_POST['prim_nom'];
         $Segundo_Nombre=$_POST['seg_nom'];
         $Primer_Apellido=$_POST['prim_ap'];
         $Segundo_Apellido=$_POST['seg_ap'];
@@ -67,7 +68,7 @@ class UsuarioController {
         $Id_Genero=$_POST['genero'];
         $Id_Ciudad=$_POST['ciudad'];
         
-        $this->Usuario->create($Primer_Nombre,$Segundo_Nombre,$Primer_Apellido,$Segundo_Apellido,$Correo,$Pasword,$Id_Documento,$Id_Genero,$Id_Ciudad);
+        $this->Usuario->create($Documento,$Primer_Nombre,$Segundo_Nombre,$Primer_Apellido,$Segundo_Apellido,$Correo,$Pasword,$Id_Documento,$Id_Genero,$Id_Ciudad);
         header('location:?c=usuario&m=Primer_login');
     }
     public function autentificacion(){
